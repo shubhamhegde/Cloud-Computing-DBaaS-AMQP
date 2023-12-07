@@ -1,0 +1,10 @@
+flask
+flask_sqlalchemy
+flask_session
+pika
+requests
+kazoo
+ipython
+uuid
+docker
+gevent

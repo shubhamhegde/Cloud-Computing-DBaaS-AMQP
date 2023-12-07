@@ -1,0 +1,7 @@
+version: '3'
+services:
+    web:
+        container_name: "rides"
+        build: .
+        ports:
+            - "8000:5000"

@@ -1,0 +1,18 @@
+version: '3'
+services:
+    user:
+        container_name: "users"
+        restart: always
+        build: ./docker_flask_example
+        ports:
+              - "8080:5000"
+        image: users:latest
+    ride:
+        container_name: "rides"
+        restart: always
+        build: ./rides
+        ports:
+              - "8000:5000"
+        links:
+              - "user"
+        image: rides:latest
